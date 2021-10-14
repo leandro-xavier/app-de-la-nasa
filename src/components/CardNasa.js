@@ -20,6 +20,7 @@ fetch(`https://api.nasa.gov/planetary/apod?api_key=igKW8FBNnNkVCVTUMic9RgoIC5sML
      }
     )
 },[])      
+console.log(isLoaded);
      
     return (
         <>
