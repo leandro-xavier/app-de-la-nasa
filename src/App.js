@@ -1,16 +1,10 @@
 import React from 'react'
 import './App.css';
-import { CardNasa } from './components/CardNasa';
-import { Navigation } from './components/Navigation';
-
-
+import { RouterApp } from './routers/RouterApp';
 
 const App = () => {
   return (
-    <div className="App">
-      <Navigation/>
-      <CardNasa/>
-    </div>
+      <RouterApp/>
   );
 }
 export default App
