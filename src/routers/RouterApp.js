@@ -1,5 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
+import { Navigation } from '../components/Navigation';
 import { HomeScreen } from '../components/Screens/HomeScreen';
 import { LoginScreen } from '../components/Screens/Login/LoginScreen';
 import { RegisterScreen } from '../components/Screens/Login/RegisterScreen';
@@ -11,7 +12,9 @@ export const RouterApp = () => {
     return (
         <div>
             <Router>
+            <Navigation/>
                 <Switch>
+                
                     <Route exact path="/" component={HomeScreen} />
                     <Route exact path="/tech/transfer" component={TechTransferScreen} />
                     <Route exact path="/tech/port" component={TechPortScreen} />

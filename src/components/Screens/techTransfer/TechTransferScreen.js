@@ -1,12 +1,11 @@
 import React from 'react';
 import {Card} from 'react-bootstrap'
-import {Navigation} from "../../../components/Navigation";
 import { CardsTech } from '../../cards/CardsTech';
 
 export const TechTransferScreen = () => {
     return (
         <div>
-            <Navigation/>
+          
                 <Card className="bg-dark text-white">
                     <Card.Img style={{width:"100%", heigth:"500px"}} src="https://media-exp1.licdn.com/dms/image/C511BAQE4oK7_8IUi5Q/company-background_10000/0/1519803278872?e=2159024400&v=beta&t=NAHAf6rF7k31ws6Y_D0JSNyoxsLAM5yzt_GPpcU4jvU" alt="Card image" />
                         <Card.ImgOverlay>
