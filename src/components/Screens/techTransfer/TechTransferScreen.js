@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card} from 'react-bootstrap'
+import {Card, Form, Button, FormControl} from 'react-bootstrap'
 import { CardsTech } from '../../cards/CardsTech';
 
 export const TechTransferScreen = () => {
@@ -13,8 +13,17 @@ export const TechTransferScreen = () => {
                                 <Card.Text>El Programa de Transferencia de Tecnología de la NASA asegura que las innovaciones desarrolladas para exploración y descubrimiento estén ampliamente disponibles para el público. La cartera de patentes de la NASA está disponible para beneficiar a los ciudadanos estadounidenses. A través de asociaciones y acuerdos de licencia con la industria, estas patentes aseguran que las inversiones de la NASA en investigación pionera encuentren usos secundarios que beneficien a la economía, creen empleos y mejoren la calidad de vida. Este punto final proporciona acceso de desarrollador estructurado y con capacidad de búsqueda a las patentes, el software y las descripciones derivadas de tecnología de la NASA que se han seleccionado para respaldar la transferencia de tecnología.</Card.Text>
                         </Card.ImgOverlay>
                 </Card>
+                <div>
+                    <div >
+                        <Form className="d-flex mt-5 mb-5">
+                            <h1>Buscador </h1>
+                            <FormControl type="search" placeholder="Search" className="me-2" aria-label="Search"/>
+                            <Button variant="outline-success">Search</Button>
+                        </Form>
+                    </div>
+                    <CardsTech/>
+                </div>
                 
-                <CardsTech/>
         </div>
     )
 }
